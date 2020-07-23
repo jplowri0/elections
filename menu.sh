@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#Setting chmod permissions:
+chmod +x houseChoice.sh
+chmod +x house.sh
+
 #This code below REF ME Week3 megaMenu.sh
 
 echo "$(tput setaf 3)2020 US Election Funds Lookup$(tput sgr 0)" #Colour set by bounding the "Access Granted" See REF https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
@@ -13,7 +17,7 @@ for ((i=0; ;++i)); do #This for loop, loops infitely until the user enters optio
     echo "5. Exit$(tput sgr 0)"
     read option;
     case $option in #The case options allows for user to make a choice.
-    1) ./executionBypass.sh;;
+    1) ./house.sh;;
     2) ./executionCodeEx.sh;;
     3) ./executionCross.sh;;
     4) ./executionDOS.sh;;
@@ -23,4 +27,4 @@ for ((i=0; ;++i)); do #This for loop, loops infitely until the user enters optio
     esac
 done
 
-#need to point the correct cases to respective files. 
+#need to point the correct cases to respective files.
