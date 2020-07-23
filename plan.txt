@@ -3,7 +3,18 @@
 #Plan -
 # 1) AWK to format the text doc.
 # 2) enter the state & district which passes into two variables state = NY & district = district no. DONE
-# 3) Parse these ST & DI to the sed command to extract the desired state and district.
-# 4) This will create text file. Containing Candidate name, party, $ received & $ spent.
-# 5) Use AWK again to pretty up this text file.
-# 6) Maybe an option to do this for all ? Need to find a way to only show Candidate on ballots.
+# 3) Parse these ST & DI to the sed command to extract the desired state and district. DONE
+# 4) This will create text file. Containing Candidate name, party, $ received & $ spent. DONE
+# 5) Use AWK again to pretty up this text file. DONE
+
+Now want to loop through each congressional seat and pick the top row. Which is the highest spent.
+Then collate or concatenate these into one master file. Count the parties. We have a winner
+
+
+
+Maybe an option to do this for all ? Need to find a way to only show Candidate on ballots.
+
+
+
+CLEAN UP
+state INPUT CHECKER. loop back if bad entry. Somehow need to enter correct number of districts.
