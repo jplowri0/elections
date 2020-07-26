@@ -13,14 +13,14 @@ for ((i=0; ;++i)); do #This for loop, loops infitely until the user enters optio
     echo "$(tput setaf 6)1. Download Data" #Open the colour setting for the menu options. See REF https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
     echo "2. Particular House District"
     echo "3. Overall count of House top Spenders. Dems V GOP"
-    echo "4. PACs"
+    echo "4. Search Top Spender by State"
     echo "5. Exit$(tput sgr 0)"
     read option;
     case $option in #The case options allows for user to make a choice.
     1) ./house.sh;;
     2) ./houseChoice.sh;;
     3) ./houseChoiceAll.sh;;
-    4) ./executionDOS.sh;;
+    4) ./houseState.sh;;
     5) echo "Auf Wiedersehen"
         exit 0;; #user deciding to quit the program.
     *) echo "Please check your entry and try again" #user entering an invalid option - such as "12"
