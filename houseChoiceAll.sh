@@ -34,12 +34,16 @@ cd ..
 #Counting the number of DEMs and Republican top Spenders.
 dems=$(grep -o "DEM" processing/sorted/topSpender.txt | wc -l)
 reps=$(grep -o "REP" processing/sorted/topSpender.txt | wc -l)
+ind=$(grep -o "IND" processing/sorted/topSpender.txt | wc -l)
 
 echo "Dems are outspending in $dems seats"
 echo "GOP are outspending in $reps seats"
+echo "Independants are outspending in $ind seats"
 
 #Below will print the x's in party colours .
 printf '\033[0;34m''x%0.s' $(seq $dems) #REF I
 printf '\033[0;31m''x%0.s' $(seq $reps) #REF I
+printf '\033[0;32m''x%0.s' $(seq $ind) #REF I
+
 
 echo""

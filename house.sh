@@ -4,5 +4,3 @@
 wget "https://www.fec.gov/files/bulk-downloads/2020/weball20.zip"
 unzip weball20.zip
 rm weball20.zip
-
-./houseChoice.sh
