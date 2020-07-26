@@ -38,5 +38,8 @@ reps=$(grep -o "REP" processing/sorted/topSpender.txt | wc -l)
 echo "Dems are outspending in $dems seats"
 echo "GOP are outspending in $reps seats"
 
+#Below will print the x's in party colours .
+printf '\033[0;34m''x%0.s' $(seq $dems) #REF I
+printf '\033[0;31m''x%0.s' $(seq $reps) #REF I
 
-printf 'x%0.s' $(seq $dems) #REF I
+echo""
